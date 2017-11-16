@@ -1,0 +1,39 @@
+@import buildpkg.BuildInfo
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>@BuildInfo.name</title>
+    </head>
+    <body>
+
+        <h1>@BuildInfo.name @BuildInfo.version</h1>
+        <h2>Build information</h2>
+
+        <dl>
+            <dt>Build time</dt>
+            <dd>@BuildInfo.buildTimestamp</dd>
+
+            <dt>Git hash</dt>
+            <dd>
+                <a target="_blank" href=@{s"https://github.com/codeniko/scala-smtp/commit/${BuildInfo.gitHash}"}>@BuildInfo.gitHash</a>
+            </dd>
+
+            <dt>Build host</dt>
+            <dd>@BuildInfo.hostname</dd>
+
+            <dt>Build user</dt>
+            <dd>@BuildInfo.whoami</dd>
+
+            <dt>Scala version</dt>
+            <dd>@BuildInfo.scalaVersion</dd>
+
+            <dt>SBT version</dt>
+            <dd>@BuildInfo.sbtVersion</dd>
+        </dl>
+
+    </body>
+</html>

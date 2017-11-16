@@ -1,0 +1,70 @@
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+
+# Created by https://www.gitignore.io/api/playframework,scala
+
+### PlayFramework ###
+# Ignore Play! working directory #
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.eml
+/dist/
+.cache
+
+
+### Scala ###
+*.class
+*.log
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# Some tests artifacts
+akamai
+status.html
+
+### Node ###
+ynpm-debug.log
+npm-debug.log
+node_modules/
+
+### Test Deploy Script ###
+dep.sh
+
+### Trivia Fetching ###
+scripts/trivia/credentials.js
+scripts/trivia/downloads
+scripts/trivia/out
+scripts/trivia/*.json
+scripts/trivia/*.csv
+
+### Story Time Fetching ###
+scripts/storytime/credentials.js
+scripts/storytime/fetch.js
+scripts/storytime/package.json
+scripts/storytime/downloads
